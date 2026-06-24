@@ -1,8 +1,142 @@
 .skill-mylist {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   background: #f9fafb;
+}
+
+.mylist-header {
+  padding: 20px 16px;
+  background: #fff;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.mylist-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.mylist-tabs {
+  display: flex;
+  background: #fff;
+  padding: 0 16px;
+  border-bottom: 1px solid #f3f4f6;
+  white-space: nowrap;
+}
+
+.mylist-tab {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #6b7280;
+  position: relative;
+}
+
+.mylist-tab--active {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.mylist-tab--active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background: #3b82f6;
+  border-radius: 2px;
+}
+
+.mylist-content {
+  padding: 12px 16px;
+}
+
+.mylist-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.mylist-cover {
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.mylist-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mylist-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.mylist-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.mylist-badge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.mylist-price {
+  font-size: 14px;
+  color: #ef4444;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.mylist-stats {
+  font-size: 12px;
   color: #9ca3af;
+}
+
+.mylist-actions {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.mylist-action {
+  font-size: 13px;
+  color: #3b82f6;
+}
+
+.mylist-action--danger {
+  color: #ef4444;
+}
+
+.mylist-empty {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.mylist-empty-text {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.mylist-skeleton {
+  margin-bottom: 12px;
+}
+
+.skeleton-block {
+  background: #f3f4f6;
+  border-radius: 12px;
 }
