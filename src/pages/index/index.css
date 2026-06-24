@@ -1,0 +1,84 @@
+.home-page {
+  min-height: 100vh;
+  background: #f9fafb;
+  padding-bottom: 24px;
+}
+
+.home-search {
+  display: flex;
+  align-items: center;
+  margin: 12px 16px;
+  padding: 10px 14px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.home-search-icon {
+  font-size: 16px;
+  margin-right: 8px;
+  color: #9ca3af;
+}
+
+.home-search-placeholder {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.home-banner {
+  margin: 0 16px 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.home-banner-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+}
+
+.home-categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 0 16px;
+  margin-bottom: 20px;
+}
+
+.home-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.home-category-icon {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.home-category-name {
+  font-size: 12px;
+  color: #374151;
+}
+
+.home-section {
+  padding: 0 16px;
+}
+
+.home-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.home-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

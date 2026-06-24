@@ -1,0 +1,27 @@
+.coming-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f9fafb;
+  padding: 0 32px;
+}
+
+.coming-icon {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.coming-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.coming-desc {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+}
