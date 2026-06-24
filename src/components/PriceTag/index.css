@@ -1,0 +1,25 @@
+.price-tag {
+  display: inline-flex;
+  align-items: baseline;
+  font-weight: 700;
+}
+
+.price-tag--sm { font-size: 13px; }
+.price-tag--md { font-size: 15px; }
+.price-tag--lg { font-size: 18px; }
+
+.price-tag__prefix {
+  font-size: 0.75em;
+  margin-right: 1px;
+}
+
+.price-tag__amount { font-size: 1em; }
+.price-tag__unit {
+  font-size: 0.65em;
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+.price-tag--primary { color: #3b82f6; }
+.price-tag--danger { color: #ef4444; }
+.price-tag--default { color: #111827; }

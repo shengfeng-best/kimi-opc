@@ -1,0 +1,90 @@
+.order-card {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.order-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.order-card__info { display: flex; flex-direction: column; gap: 2px; }
+.order-card__no { font-size: 12px; color: #6b7280; }
+.order-card__time { font-size: 11px; color: #9ca3af; }
+
+.order-card__status {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.order-card__body { padding: 12px 16px; }
+
+.order-card__skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.order-card__skill-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  flex: 1;
+}
+
+.order-card__skill-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.order-card__parties {
+  display: flex;
+  gap: 16px;
+}
+
+.order-card__party { font-size: 12px; color: #6b7280; }
+
+.order-card__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 8px 16px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.order-card__action {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.order-card__action--primary {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.order-card__action--default {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.order-card__action--warn {
+  background: #fff7ed;
+  color: #f59e0b;
+}
+
+.order-card__action--danger {
+  background: #fef2f2;
+  color: #ef4444;
+}
