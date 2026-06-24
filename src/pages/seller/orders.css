@@ -1,8 +1,168 @@
 .seller-orders {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   background: #f9fafb;
+}
+
+.seller-orders-header {
+  padding: 20px 16px;
+  background: #fff;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.seller-orders-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.seller-orders-tabs {
+  display: flex;
+  background: #fff;
+  padding: 0 16px;
+  border-bottom: 1px solid #f3f4f6;
+  white-space: nowrap;
+}
+
+.seller-tab {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #6b7280;
+  position: relative;
+}
+
+.seller-tab--active {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.seller-tab--active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background: #3b82f6;
+  border-radius: 2px;
+}
+
+.seller-orders-list {
+  padding: 12px 16px;
+}
+
+.seller-order {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.seller-order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.seller-order-buyer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.seller-buyer-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.seller-buyer-name {
+  font-size: 13px;
+  color: #374151;
+}
+
+.seller-order-status {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.seller-order-status--pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.seller-order-status--paid {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.seller-order-status--delivering {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.seller-order-status--completed {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.seller-order-skill {
+  display: flex;
+  gap: 12px;
+}
+
+.seller-order-cover {
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.seller-order-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seller-order-title {
+  font-size: 14px;
+  color: #111827;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.seller-order-price {
+  font-size: 14px;
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.seller-order-date {
+  font-size: 12px;
   color: #9ca3af;
+  margin-top: 8px;
+  text-align: right;
+}
+
+.seller-empty {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.seller-empty-text {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.seller-order-skeleton {
+  margin-bottom: 12px;
+}
+
+.skeleton-block {
+  background: #f3f4f6;
+  border-radius: 12px;
 }

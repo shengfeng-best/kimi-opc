@@ -1,8 +1,169 @@
 .order-fulfill {
+  min-height: 100vh;
+  background: #f9fafb;
+  padding-bottom: 80px;
+}
+
+.fulfill-header {
+  padding: 20px 16px;
+  background: #fff;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.fulfill-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.fulfill-buyer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #fff;
+  margin-top: 12px;
+}
+
+.fulfill-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.fulfill-buyer-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  display: block;
+}
+
+.fulfill-skill-title {
+  font-size: 13px;
+  color: #9ca3af;
+  display: block;
+  margin-top: 2px;
+}
+
+.fulfill-section {
+  padding: 16px;
+  background: #fff;
+  margin-top: 12px;
+}
+
+.fulfill-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.fulfill-requirements {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.fulfill-textarea {
+  width: 100%;
+  height: 120px;
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.fulfill-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fulfill-file {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.fulfill-file-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.fulfill-file-remove {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  background: #ef4444;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: #f9fafb;
+  color: #fff;
+  font-size: 12px;
+}
+
+.fulfill-add {
+  width: 80px;
+  height: 80px;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #9ca3af;
+}
+
+.fulfill-add-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.fulfill-add-text {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.fulfill-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-top: 1px solid #f3f4f6;
+  padding: 16px;
+}
+
+.fulfill-submit {
+  width: 100%;
+  height: 48px;
+  background: #3b82f6;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.fulfill-skeleton {
+  padding: 16px;
+}
+
+.skeleton-block {
+  background: #f3f4f6;
+  border-radius: 8px;
 }
