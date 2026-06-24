@@ -1,8 +1,166 @@
 .order-confirm {
+  min-height: 100vh;
+  background: #f9fafb;
+  padding-bottom: 80px;
+}
+
+.confirm-header {
+  padding: 20px 16px;
+  background: #fff;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.confirm-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.confirm-seller {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: #fff;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.confirm-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.confirm-seller-name {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.confirm-skill {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: #fff;
+  margin-top: 12px;
+}
+
+.confirm-cover {
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.confirm-skill-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.confirm-skill-title {
+  font-size: 14px;
+  color: #111827;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.confirm-skill-price {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.confirm-remark {
+  padding: 16px;
+  background: #fff;
+  margin-top: 12px;
+}
+
+.confirm-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.confirm-remark-text {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.confirm-fee {
+  padding: 16px;
+  background: #fff;
+  margin-top: 12px;
+}
+
+.fee-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 12px;
+}
+
+.fee-total {
+  border-top: 1px solid #f3f4f6;
+  padding-top: 12px;
+  font-weight: 600;
+}
+
+.fee-total-price {
+  color: #ef4444;
+  font-size: 16px;
+}
+
+.confirm-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-top: 1px solid #f3f4f6;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.confirm-total {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.confirm-total-price {
+  color: #ef4444;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.confirm-pay {
+  width: 120px;
+  height: 40px;
+  background: #22c55e;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: #f9fafb;
-  color: #9ca3af;
+  border: none;
+}
+
+.confirm-skeleton {
+  padding: 16px;
+}
+
+.skeleton-block {
+  background: #f3f4f6;
+  border-radius: 8px;
 }
