@@ -1,0 +1,58 @@
+{
+  "name": "kimi-opc",
+  "version": "1.0.0",
+  "description": "OPC技能星球微信小程序 - 可实际使用的完整版本",
+  "template": "taro-template",
+  "scripts": {
+    "dev:weapp": "taro build --type weapp --watch",
+    "dev:h5": "taro build --type h5 --watch",
+    "build:weapp": "taro build --type weapp",
+    "build:h5": "taro build --type h5",
+    "typecheck": "tsc --noEmit",
+    "typecheck:strict": "pnpm typecheck:strict:order-skill && pnpm typecheck:strict:profile-team && pnpm typecheck:strict:remaining",
+    "typecheck:strict:order-skill": "tsc --noEmit -p tsconfig.strict.order-skill.json",
+    "typecheck:strict:profile-team": "tsc --noEmit -p tsconfig.strict.profile-team.json",
+    "typecheck:strict:remaining": "tsc --noEmit -p tsconfig.strict.remaining.json",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "ci:verify": "pnpm lint && pnpm typecheck && pnpm build:weapp"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.4",
+    "ios >= 8"
+  ],
+  "dependencies": {
+    "@tarojs/components": "^4.1.11",
+    "@tarojs/plugin-framework-react": "^4.1.11",
+    "@tarojs/plugin-platform-weapp": "^4.1.11",
+    "@tarojs/react": "^4.1.11",
+    "@tarojs/runtime": "^4.1.11",
+    "@tarojs/shared": "^4.1.11",
+    "@tarojs/taro": "^4.1.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vant-weapp": "^0.5.29",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-react": "^7.28.5",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.2",
+    "@tarojs/cli": "^4.1.11",
+    "@tarojs/plugin-platform-h5": "^4.1.11",
+    "@tarojs/webpack5-runner": "^4.1.11",
+    "@types/react": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "babel-preset-taro": "^4.1.11",
+    "eslint": "^8.57.0",
+    "eslint-config-taro": "^4.1.11",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "sass": "^1.99.0",
+    "stylelint": "^16.3.1",
+    "typescript": "^5.4.0",
+    "webpack": "5.91.0"
+  },
+  "packageManager": "pnpm@10.32.1"
+}
