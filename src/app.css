@@ -1,0 +1,196 @@
+/* OPC技能星球 - 全局样式 */
+/* 基于 Figma 设计规范 v1.1 */
+
+page {
+  background-color: #F9FAFB;
+  font-size: 14px;
+  color: #111827;
+  line-height: 1.5;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+/* ========== 通用按钮 ========== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background-color: #3B82F6;
+  color: #fff;
+}
+
+.btn-primary:active {
+  background-color: #2563EB;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #3B82F6;
+  border: 1px solid #3B82F6;
+}
+
+.btn-default {
+  background-color: #fff;
+  color: #6B7280;
+  border: 1px solid #E5E7EB;
+}
+
+.btn-danger {
+  background-color: #EF4444;
+  color: #fff;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* ========== 通用卡片 ========== */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* ========== 通用标题 ========== */
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+/* ========== 空状态 ========== */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #9CA3AF;
+}
+
+.empty-icon {
+  font-size: 60px;
+  margin-bottom: 16px;
+}
+
+.empty-text {
+  font-size: 14px;
+}
+
+/* ========== 徽章/标签 ========== */
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #3B82F6;
+}
+
+.tag-success {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+}
+
+.tag-warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: #F59E0B;
+}
+
+.tag-danger {
+  background: rgba(239, 68, 68, 0.1);
+  color: #EF4444;
+}
+
+/* ========== 列表项 ========== */
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: #fff;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+/* ========== 分割线 ========== */
+.divider {
+  height: 1px;
+  background: #E5E7EB;
+  margin: 16px 0;
+}
+
+/* ========== 头像 ========== */
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #F3F4F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+.avatar-sm { width: 32px; height: 32px; font-size: 16px; }
+.avatar-md { width: 48px; height: 48px; font-size: 24px; }
+.avatar-lg { width: 64px; height: 64px; font-size: 32px; }
+.avatar-xl { width: 80px; height: 80px; font-size: 40px; }
+
+/* ========== Flex工具 ========== */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-center { align-items: center; justify-content: center; }
+.flex-between { justify-content: space-between; }
+.flex-1 { flex: 1; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-xs { gap: 4px; }
+.gap-sm { gap: 8px; }
+.gap-md { gap: 12px; }
+.gap-lg { gap: 16px; }
+
+/* ========== 文字工具 ========== */
+.text-primary { color: #111827; }
+.text-secondary { color: #6B7280; }
+.text-placeholder { color: #9CA3AF; }
+.text-success { color: #10B981; }
+.text-warning { color: #F59E0B; }
+.text-danger { color: #EF4444; }
+.text-sm { font-size: 12px; }
+.text-base { font-size: 14px; }
+.text-lg { font-size: 16px; }
+.text-xl { font-size: 18px; }
+.text-title-sm { font-size: 15px; font-weight: 600; }
+.text-title-md { font-size: 16px; font-weight: 600; }
+.text-bold { font-weight: 600; }
+.text-center { text-align: center; }
+
+/* ========== 间距工具 ========== */
+.p-sm { padding: 8px; }
+.p-md { padding: 12px; }
+.p-lg { padding: 16px; }
+.px-lg { padding-left: 16px; padding-right: 16px; }
+.py-sm { padding-top: 8px; padding-bottom: 8px; }
+.mt-sm { margin-top: 8px; }
+.mt-md { margin-top: 12px; }
+.mt-lg { margin-top: 16px; }
+.mb-sm { margin-bottom: 8px; }
+.mb-md { margin-bottom: 12px; }
+.mb-lg { margin-bottom: 16px; }
