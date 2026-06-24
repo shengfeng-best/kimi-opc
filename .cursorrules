@@ -1,0 +1,68 @@
+# OPC技能星球 - Cursor Rules
+
+## 技术栈
+- Taro 4.x + React + TypeScript
+- 微信小程序
+- Vant Weapp UI
+- Zustand 状态管理
+
+## 代码规范
+- 组件文件：PascalCase，如 SkillCard.tsx
+- 工具函数：camelCase，如 formatPrice.ts
+- TypeScript 严格模式（strict: true）
+- 使用 async/await 处理异步操作
+- 微信API调用使用 Taro API
+
+## 目录结构
+```
+src/
+├── pages/          # 页面
+├── components/     # 通用组件
+├── store/          # Zustand 状态
+├── services/       # API 调用封装
+├── utils/          # 工具函数
+├── types/          # TypeScript 类型定义
+├── hooks/          # 自定义 Hooks
+├── styles/         # 设计系统
+├── cloud/          # 云开发封装
+└── config/         # 配置
+```
+
+## 微信小程序限制
+- 分包大小限制 2MB，主包尽量轻
+- 异步 API 全部用 async/await
+- request 并发限制 10 个
+- 本地图片用 import require() 引入
+- scroll-view 滚动使用 scroll-y
+
+## 组件开发规范
+1. 函数组件 + Hooks
+2. Props 使用 TypeScript 接口定义
+3. 样式文件与组件同名 .css
+4. 使用 Vant Weapp 组件库
+
+## API 规范
+- 基础路径：/api/v1
+- 请求格式：{ code, message, data }
+- 鉴权：Bearer Token
+
+## 状态管理
+- 使用 Zustand 进行全局状态管理
+- 用户状态：useUserStore
+- 技能状态：useSkillStore
+
+## 金额规范
+- 所有金额统一用分存储（base_price=29900 = ¥299.00）
+- 显示时用 fenToYuan() 转换
+
+## 订单状态
+```
+pending_pay → 待付款（24h超时取消）
+pending_confirm → 待确认（48h超时退款）
+in_progress → 服务中
+pending_accept → 待验收（7天超时自动确认）
+completed → 已完成
+cancelled → 已取消
+refunded → 已退款
+arbitration → 仲裁中
+```
