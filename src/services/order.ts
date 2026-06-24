@@ -9,6 +9,10 @@ export async function getOrderDetail(orderId: string) {
   return request.get<Order>(`/orders/${orderId}`);
 }
 
+export async function fetchOrderDetail(orderId: string) {
+  return getOrderDetail(orderId);
+}
+
 export async function createOrder(data: {
   skillId: string;
   requirement?: string;
@@ -33,6 +37,10 @@ export async function deliverOrder(orderId: string, data: { deliverable: string;
   return request.post(`/orders/${orderId}/deliver`, data);
 }
 
+export async function submitDeliverable(orderId: string, data: { description: string; files?: string[] }) {
+  return deliverOrder(orderId, { deliverable: data.description, attachments: data.files });
+}
+
 export async function acceptOrder(orderId: string) {
   return request.post(`/orders/${orderId}/accept`);
 }
@@ -47,4 +55,8 @@ export async function rateOrder(orderId: string, data: { rating: number; content
 
 export async function getSellerOrders(params: { pageNum?: number; pageSize?: number; status?: OrderStatus }) {
   return request.get<PaginatedResult<Order>>('/orders/seller', params);
+}
+
+export async function fetchSellerOrders(status?: OrderStatus) {
+  return getSellerOrders({ status });
 }

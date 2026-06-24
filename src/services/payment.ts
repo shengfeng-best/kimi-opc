@@ -51,3 +51,5 @@ export const paymentService = {
     await this.requestWechatPay(payParams);
   },
 };
+
+export const requestPayment = paymentService;
