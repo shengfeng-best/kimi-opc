@@ -1,0 +1,8 @@
+.user-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f9fafb;
+  color: #9ca3af;
+}

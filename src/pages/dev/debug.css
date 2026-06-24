@@ -1,0 +1,12 @@
+.dev-debug {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #1f2937;
+  color: #fbbf24;
+}
+
+.placeholder {
+  font-size: 18px;
+}
