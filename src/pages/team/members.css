@@ -1,0 +1,123 @@
+.team-members {
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.team-members__invite {
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.invite-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.invite-form {
+  display: flex;
+  gap: 10px;
+}
+
+.invite-input {
+  flex: 1;
+  height: 40px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.invite-btn {
+  padding: 0 20px;
+  height: 40px;
+  background: #3b82f6;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.team-members__list {
+  background: #fff;
+  padding: 16px;
+}
+
+.members-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.members-scroll {
+  max-height: calc(100vh - 200px);
+}
+
+.member-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.member-row:last-child {
+  border-bottom: none;
+}
+
+.member-row__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.member-row__info {
+  flex: 1;
+}
+
+.member-row__name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.member-row__role {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.member-row__role--leader { background: #fef3c7; color: #d97706; }
+.member-row__role--admin { background: #dbeafe; color: #2563eb; }
+.member-row__role--member { background: #f3f4f6; color: #6b7280; }
+
+.member-row__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.member-row__action {
+  padding: 5px 12px;
+  background: #f3f4f6;
+  color: #6b7280;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.member-row__action--danger {
+  background: #fef2f2;
+  color: #ef4444;
+}

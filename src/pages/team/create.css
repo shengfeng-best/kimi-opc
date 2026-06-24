@@ -1,0 +1,84 @@
+.team-create {
+  padding: 16px;
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.team-create__form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.form-item {
+  margin-bottom: 16px;
+}
+
+.form-item:last-child {
+  margin-bottom: 0;
+}
+
+.form-item__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.required {
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+.form-item__input {
+  height: 44px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.form-item__textarea {
+  width: 100%;
+  height: 120px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-item__count {
+  text-align: right;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+.team-create__tips {
+  background: #eff6ff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.tips-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.tips-item {
+  font-size: 13px;
+  color: #3b82f6;
+  line-height: 1.8;
+  display: block;
+}
+
+.team-create__submit {
+  margin-top: 8px;
+}

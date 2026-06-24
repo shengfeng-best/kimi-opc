@@ -1,0 +1,134 @@
+.team-detail {
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.team-detail--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  color: #9ca3af;
+}
+
+.team-detail__header {
+  background: #fff;
+  padding: 20px 16px;
+  margin-bottom: 12px;
+}
+
+.team-detail__cover {
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  background: #f3f4f6;
+}
+
+.team-detail__name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.team-detail__desc {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.team-detail__meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.team-detail__section {
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.section-action {
+  font-size: 13px;
+  color: #3b82f6;
+}
+
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.member-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 64px;
+}
+
+.member-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  margin-bottom: 4px;
+}
+
+.member-name {
+  font-size: 12px;
+  color: #374151;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.member-role {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  margin-top: 2px;
+}
+
+.member-role--leader { background: #fef3c7; color: #d97706; }
+.member-role--admin { background: #dbeafe; color: #2563eb; }
+.member-role--member { background: #f3f4f6; color: #6b7280; }
+
+.team-detail__actions {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.action-btn {
+  padding: 12px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.action-btn--primary { background: #3b82f6; color: #fff; }
+.action-btn--danger { background: #fef2f2; color: #ef4444; }
+.action-btn--default { background: #f3f4f6; color: #6b7280; }

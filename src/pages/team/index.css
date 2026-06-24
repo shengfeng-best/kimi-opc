@@ -1,0 +1,124 @@
+.team-index {
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #fff;
+  border-bottom: 1px solid #f3f4f6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.team-tabs {
+  display: flex;
+  gap: 16px;
+}
+
+.team-tab {
+  font-size: 15px;
+  color: #9ca3af;
+  padding: 4px 0;
+  position: relative;
+}
+
+.team-tab--active {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.team-tab--active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #3b82f6;
+  border-radius: 1px;
+}
+
+.team-create-btn {
+  padding: 6px 14px;
+  background: #3b82f6;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.team-list {
+  padding: 12px 16px;
+  height: calc(100vh - 60px);
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.team-card__header {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.team-card__cover {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  flex-shrink: 0;
+}
+
+.team-card__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.team-card__name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.team-card__desc {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.team-card__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.team-card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 10px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.team-card__skill-tag {
+  padding: 3px 10px;
+  background: #dbeafe;
+  color: #3b82f6;
+  font-size: 11px;
+  border-radius: 999px;
+}
